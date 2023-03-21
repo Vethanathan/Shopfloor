@@ -1,0 +1,73 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="AnandPortals.controller.Landing"
+	xmlns:html="http://www.w3.org/1999/xhtml">
+	<App>
+		<pages>
+			<Page title="Title">
+				<Page showHeader="false" title="KAAR TECHNOLOGIES" class="bfcl">
+				<Toolbar width="100%" class="headerld">
+					<Text text="KAAR TECHNOLOGIES" class="txttitleld"/>
+					<Image src="img/KaarLogo.jpg" width="3.0rem" height="3.0rem" press="company"/>
+				</Toolbar>
+				<!--<headerContent class="head">-->
+				<!--	<Image src="img/KaarLogo.jpg" width="3.0rem" height="3.0rem" press="company"/>-->
+				<!--</headerContent>-->
+				<content>
+					<FlexBox xmlns="sap.m" width="100%" id="__box0" height="350px" class="flxds" wrap="Wrap" direction="Inherit">
+						<items>
+							<html:h1 class="txth1">Welcome ! to
+								<html:span class="txth2">
+									KAAR TECHNOLOGIES</html:span>
+								<!--<html:br>One - Stop Portal Services.</html:br>-->
+							</html:h1>
+						</items>
+					</FlexBox>
+					<FlexBox xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" width="100%" id="__box0_copy" height="350px"
+						class="flxds1">
+						
+						<FlexBox xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns:html="http://www.w3.org/1999/xhtml" xmlns="sap.m" width="300px"
+							id="__box1_copy3" height="300px" wrap="Wrap" class="flz1">
+							<items>
+								<Text xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="SHOP FLOOR PORTAL" id="__text4_copy"
+									class="texfx" textAlign="Initial"/>
+								<Image xmlns="sap.m" width="120px" height="120px" id="__image0_copy3" src="img/cart.png" class="imgd"/>
+								<!--<html:button type="button" class="btnd">LOGIN</html:button>-->
+								<Button xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="LOGIN" width="100px" press="OnLogin" id="__button1_copy"
+									class="btnd" type="Emphasized"/>
+							</items>
+						</FlexBox>
+						<FlexBox width="300px" id="__box2_copy" height="300px" wrap="Wrap" class="flz1">
+							<items>
+								<Text xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="EHSM PORTAL" id="__text4_copy2"
+									class="texfx1" textAlign="Center"/>
+								<Image xmlns="sap.m" width="120px" height="120px" id="__image2_copy" src="img/ehs.png" class="imgd"/>
+								<!--<html:button type="button" class="btnd">LOGIN</html:button>-->
+								<Button xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="LOGIN" width="100px" id="__button1_copy2"
+									class="btnd" type="Emphasized"/>
+							</items>
+						</FlexBox>
+						<FlexBox width="300px" id="__box4_copy" height="300px" wrap="Wrap" class="flz1">
+							<items>
+								<Text xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="QUALITY PORTAL" id="__text4_copy3"
+									class="texfx2" textAlign="Center"/>
+								<Image xmlns="sap.m" width="120px" height="120px" id="__image3_copy" src="img/qlt.png" class="imgd"/>
+								<!--<html:button type="button" class="btnd">LOGIN</html:button>-->
+								<Button xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" text="LOGIN" width="100px" id="__button1_copy3"
+									class="btnd" type="Emphasized"/>
+							</items>
+						</FlexBox>
+						<items/>
+					</FlexBox>
+				</content>
+				<footer>
+					<Toolbar class="foot">
+						<Image src="img/saplg.jpg" width="5.0rem" height="3.0rem" press="company" class="footimg"/>
+						<content class="foottxt">
+							<Text text="Copyright @ 2022 | KAAR TECHNOLOGIES" id="__text0" textAlign="Center" textDirection="LTR"/>
+						</content>
+					</Toolbar>
+				</footer>
+			</Page>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>

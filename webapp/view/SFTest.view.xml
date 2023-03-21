@@ -1,0 +1,61 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="AnandPortals.controller.SFTest"
+	xmlns:html="http://www.w3.org/1999/xhtml"
+	xmlns:smartFilterBar="sap.ui.comp.smartfilterbar"
+	xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	height="100%">
+
+		<!-- use this to make the table occupy the available screen height -->
+		<Page title="PLAN ORDER DETAILS" showNavButton="true" navButtonPress="onPrevious" >
+		<VBox fitContainer="true">
+		
+		    <smartTable:SmartTable id="PlanList" entitySet="LineItemsSet" smartFilterId="smartFilterBar" tableType="Table" useExportToExcel="true"  useVariantManagement="true" useTablePersonalisation="true" header="Number of Orders" showRowCount="true"  enableAutoBinding="true"  class="me" app:useSmartToggle="true">
+				<!-- layout data used to make the table growing but the filter bar fixed -->
+				
+					<Table  items="{/results}">
+						<columns>
+							<Column width="12em">
+								<Text text="Order Number"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Order Type"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Procurement Type"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Start Date"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Finish Date"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Material No"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Planned Quantity"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Unit"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text="{PlannedorderNum}"/>
+									<Text text="{OrderType}"/>
+									<Text text="{ProcurementType}"/>
+									<Text text="{OrderStartDate}"/>
+									<Text text="{OrderFinDate}"/>
+									<Text text="{Material}"/>
+									<Text text="{TotalPlordQty}"/>
+									<Text text="{BaseUom}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+			
+			</smartTable:SmartTable>
+		</VBox>
+	</Page>
+</mvc:View>

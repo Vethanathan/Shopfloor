@@ -1,0 +1,99 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="AnandPortals.controller.SFProdList"
+	xmlns:html="http://www.w3.org/1999/xhtml" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" 	xmlns:smartTable="sap.ui.comp.smarttable"
+	xmlns:app="http://schemas.sap.com/sapui5/extension/sap.ui.core.CustomData/1"
+	height="100%">
+	<App>
+		<!--<pages>-->
+		<!--	<Page title="PRODUCTION ORDER DETAILS" showNavButton="true" navButtonPress="onPrevious" >-->
+		<!--		<content>-->
+		<!--			<Table id="ProductionList" items="{/results}">-->
+		<!--				<columns>-->
+		<!--					<Column width="12em">-->
+		<!--						<Text text="Order Number"/>-->
+		<!--					</Column>-->
+		<!--						<Column width="12em">-->
+		<!--						<Text text="Plant No"/>-->
+		<!--					</Column>-->
+		<!--					<Column width="12em">-->
+		<!--						<Text text="Start Date"/>-->
+		<!--					</Column>-->
+		<!--						<Column width="12em">-->
+		<!--						<Text text="Finish Date"/>-->
+		<!--					</Column>-->
+		<!--						<Column width="12em">-->
+		<!--						<Text text="Material"/>-->
+		<!--					</Column>-->
+		<!--					<Column width="12em">-->
+		<!--						<Text text="Quantity"/>-->
+		<!--					</Column>-->
+		<!--					<Column width="12em">-->
+		<!--						<Text text="Unit"/>-->
+		<!--					</Column>-->
+		<!--				</columns>-->
+		<!--				<items>-->
+		<!--					<ColumnListItem vAlign="Middle">-->
+		<!--						<cells>-->
+		<!--							<Text text="{OrderNumber}"/>-->
+		<!--							<Text text="{ProductionPlant}"/>-->
+		<!--							<Text text="{ProductionStartDate}"/>-->
+		<!--							<Text text="{ProductionFinishDate}"/>-->
+		<!--							<Text text="{MaterialText}"/>-->
+		<!--							<Text text="{TargetQuantity}"/>-->
+		<!--							<Text text="{Unit}"/>-->
+		<!--						</cells>-->
+		<!--					</ColumnListItem>-->
+		<!--				</items>-->
+		<!--			</Table>-->
+		<!--		</content>-->
+		<!--	</Page>-->
+		<!--</pages>-->
+			<Page title="PRODUCTION ORDER DETAILS" showNavButton="true" navButtonPress="onPrevious" >
+		<VBox fitContainer="true">
+		
+		    <smartTable:SmartTable id="ProductionList" entitySet="LineItemsSet" smartFilterId="smartFilterBar" tableType="Table" useExportToExcel="true"  useVariantManagement="true" useTablePersonalisation="true" header="Number of Rows" showRowCount="true"  enableAutoBinding="true" class="me"   app:useSmartToggle="true">
+				<!-- layout data used to make the table growing but the filter bar fixed -->
+				
+					<Table  items="{/results}">
+						<columns class="me">
+							<Column width="12em">
+								<Text text="Order Number" class="bb"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Plant No"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Start Date"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Finish Date"/>
+							</Column>
+								<Column width="12em">
+								<Text text="Material"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Quantity"/>
+							</Column>
+							<Column width="12em">
+								<Text text="Unit"/>
+							</Column>
+						</columns>
+						<items>
+							<ColumnListItem vAlign="Middle">
+								<cells>
+									<Text text="{OrderNumber}"/>
+									<Text text="{ProductionPlant}"/>
+									<Text text="{ProductionStartDate}"/>
+									<Text text="{ProductionFinishDate}"/>
+									<Text text="{MaterialText}"/>
+									<Text text="{TargetQuantity}"/>
+									<Text text="{Unit}"/>
+								</cells>
+							</ColumnListItem>
+						</items>
+					</Table>
+			
+			</smartTable:SmartTable>
+		</VBox>
+	</Page>
+	</App>
+</mvc:View>
